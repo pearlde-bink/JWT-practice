@@ -1,0 +1,30 @@
+GET http://localhost:5000/books
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJpbmsiLCJpYXQiOjE2OTA4NjY2MDQsImV4cCI6MTY5MDg2NjYzNH0.8HR5wR_23WrSuOYilmAEFi55C-4L1OsKBofrfPKAaLA
+
+###
+
+POST http://localhost:55000/login
+Content-Type:  application/json
+
+{
+    "username": "bink",
+    "age": "18"
+}
+
+###
+
+POST http://localhost:55000/refreshToken
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJpbmsiLCJpYXQiOjE2OTA4NjY5NTV9.-2jDHE4HkS8cuefgrMXr9MhYp1J5Q-iuz66SittwEiM"
+}
+
+
+###
+POST http://localhost:55000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJpbmsiLCJpYXQiOjE2OTA4NjY5NTV9.-2jDHE4HkS8cuefgrMXr9MhYp1J5Q-iuz66SittwEiM"
+}
